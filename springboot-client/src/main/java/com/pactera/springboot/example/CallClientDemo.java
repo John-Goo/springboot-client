@@ -1,7 +1,7 @@
 package com.pactera.springboot.example;
 
 import com.google.gson.Gson;
-import com.pactera.springboot.client.RestTmeplateClient;
+import com.pactera.springboot.client.RestTemplateClient;
 
 public class CallClientDemo {
 
@@ -11,7 +11,7 @@ public class CallClientDemo {
 	
 	public static void main(String[] args) {
 
-		HelloClient helloClient =  RestTmeplateClient
+		HelloClient helloClient =  RestTemplateClient
 				.build()
 				.target(HelloClient.class, URL);
 		
